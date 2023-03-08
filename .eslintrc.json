@@ -1,0 +1,91 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "plugin:react/recommended",
+      "airbnb", "airbnb/hooks", "airbnb-typescript"
+  ],
+  "overrides": [
+      {
+        "files": ["*.tsx", "*.ts", "client/**/*.tsx", "client/**/*.ts"],
+        "rules": {
+          "import/prefer-default-export": "off",
+          "import/order": "off",
+          "implicit-arrow-linebreak": "off",
+          "function-paren-newline": "off",
+          "consistent-return": "off",
+          "object-curly-newline": "off",
+          "operator-linebreak": "off",
+          "no-restricted-syntax": "off",
+          "class-methods-use-this": "off",
+          "import/no-cycle": "off",
+          "@typescript-eslint/indent": "off",
+          "react/require-default-props": "off",
+          "react/jsx-props-no-spreading": "off",
+          "no-confusing-arrow": "off",
+          "react/no-array-index-key": "off",
+          "react/jsx-one-expression-per-line": "off",
+          "react/no-this-in-sfc": "off",
+          "func-names": "off",
+          "@typescript-eslint/no-explicit-any": 2,
+          "react-hooks/exhaustive-deps": "off",
+          "import/no-extraneous-dependencies": "off",
+          "newline-per-chained-call": "off",
+          "max-len": [0, { "code": 120 }],
+          "react/react-in-jsx-scope": "off",
+          "nonblock-statement-body-position": "off",
+          "spaced-comment": "off",
+          "no-var": "off",
+          "vars-on-top": "off",
+          "@typescript-eslint/no-shadow": "off",
+          "react/function-component-definition": "off",
+          "import/no-named-as-default": "off",
+          "jsx-a11y/click-events-have-key-events": "off",
+          "jsx-a11y/no-noninteractive-element-interactions": "off",
+          "react/jsx-indent": "off",
+          "react/jsx-curly-newline": [
+            "error",
+            {
+              "multiline": "consistent",
+              "singleline": "consistent"
+            }
+          ],
+          "react/jsx-wrap-multilines": [
+            "error",
+            {
+              "declaration": "parens-new-line",
+              "assignment": "parens-new-line",
+              "return": "parens-new-line",
+              "arrow": "parens-new-line",
+              "condition": "parens-new-line",
+              "logical": "parens-new-line",
+              "prop": "ignore"
+            }
+          ],
+          "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "": "never",
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ]
+        }
+      }
+    ],
+  "parserOptions": {
+      "project": "./tsconfig.json",
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react"
+  ],
+  "rules": {
+  }
+}

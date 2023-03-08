@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2022",                                 
+    "module": "CommonJS",
+    "moduleResolution": "node",                            
+    "esModuleInterop": true,                            
+    "forceConsistentCasingInFileNames": true,           
+    "strict": true,  
+    "outDir": "dist",        
+    "jsx": "react",           
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "dist", "build"], 
+  "resolve": {
+    "extensions": [".ts", ".tsx", ".js", ".jsx"]
+  }
+}
